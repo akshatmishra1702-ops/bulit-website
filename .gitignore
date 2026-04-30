@@ -1,0 +1,11 @@
+node_modules/
+.pnpm-store/
+dist/
+*.log
+.env
+.env.local
+.replit
+.replitignore
+.agents/
+.local/
+artifacts/mockup-sandbox/
