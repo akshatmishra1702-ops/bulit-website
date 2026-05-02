@@ -1,11 +1,3 @@
-import Anthropic from "@anthropic-ai/sdk";
-
-if (!process.env.ANTHROPIC_API_KEY) {
-  throw new Error(
-    "ANTHROPIC_API_KEY must be set. Add it as an environment variable in Railway.",
-  );
-}
-
-export const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-});
+// Summarization is handled directly by Gemini in artifacts/api-server/src/lib/summarize.ts
+// This file is kept for compatibility but is not used.
+export const anthropic = null;
